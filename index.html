@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the layout fit mobile screens. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | FitSync</title>
+  <!-- Bootstrap provides ready-made layout and styling classes. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#main-content">Skip to content</a>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><img src="logo.svg" alt="FitSync logo" width="28" height="28" class="me-2 align-middle">FitSync</a>
+        <!-- On small screens, this button opens the navigation links. -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="timetable.html">Timetable</a></li>
+          <li class="nav-item"><a class="nav-link" href="class-details.html">Class details</a></li>
+          <li class="nav-item"><a class="nav-link" href="create-class.html">Create class</a></li>
+          </ul>
+          <form class="d-flex mt-3 mt-md-0 ms-md-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search classes" aria-label="Search classes">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container py-5">
+    <section class="hero rounded p-4 p-md-5 mb-5" aria-labelledby="welcome-title">
+      <p>Apex Fitness Center</p>
+      <h1 id="welcome-title">Find your next workout</h1>
+      <p class="lead">Explore our classes and plan a week that works for you.</p>
+      <a class="btn btn-light" href="timetable.html">View timetable</a>
+    </section>
+
+    <section class="mb-5" aria-labelledby="popular-title">
+      <h2 id="popular-title" class="mb-3">Popular classes</h2>
+      <!-- A row contains columns. col-md-4 gives each card 4 of 12 columns on wider screens. -->
+      <div class="row g-3">
+        <div class="col-md-4">
+          <article class="card h-100"><div class="card-body">
+            <h3 class="h5">HIIT Cardio</h3>
+            <p>High intensity intervals with Sarah Jenkins.</p>
+            <a href="class-details.html" class="btn btn-success">View HIIT class</a>
+          </div></article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100"><div class="card-body">
+            <h3 class="h5">Vinyasa Yoga</h3>
+            <p>Low intensity movement and flexibility with Mike Ross.</p>
+            <a href="timetable.html" class="btn btn-outline-dark">See class times</a>
+          </div></article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100"><div class="card-body">
+            <h3 class="h5">Power Lifting</h3>
+            <p>Extreme intensity strength training with Dave Bautista.</p>
+            <a href="timetable.html" class="btn btn-outline-dark">See class times</a>
+          </div></article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="amenities-title">
+      <h2 id="amenities-title">Gym amenities</h2>
+      <ul>
+        <li>Dedicated studios for cardio and yoga</li>
+        <li>A weights area for strength training</li>
+        <li>Instructors specialising in cardio, yoga and strength</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="border-top py-4 text-center">
+    <p class="mb-0">FitSync &middot; Apex Fitness Center</p>
+  </footer>
+  <!-- Bootstrap JavaScript makes the mobile navigation button work. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
