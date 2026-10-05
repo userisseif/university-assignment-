@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Makes the layout fit mobile screens. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable | FitSync</title>
+  <!-- Bootstrap provides ready-made layout and styling classes. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <a class="visually-hidden-focusable" href="#main-content">Skip to content</a>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><img src="logo.svg" alt="FitSync logo" width="28" height="28" class="me-2 align-middle">FitSync</a>
+        <!-- On small screens, this button opens the navigation links. -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="timetable.html">Timetable</a></li>
+          <li class="nav-item"><a class="nav-link" href="class-details.html">Class details</a></li>
+          <li class="nav-item"><a class="nav-link" href="create-class.html">Create class</a></li>
+          </ul>
+          <form class="d-flex mt-3 mt-md-0 ms-md-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search classes" aria-label="Search classes">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="container py-5">
+    <h1>Weekly timetable</h1>
+    <p class="text-body-secondary">28 September – 4 October 2026 · All times are gym local time.</p>
+    <!-- The wrapper allows the table to scroll on narrow screens. -->
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered align-middle">
+        <caption>Sample class schedule. Enrolment counts are demonstration data.</caption>
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Date</th><th scope="col">Time</th><th scope="col">Class</th>
+            <th scope="col">Intensity</th><th scope="col">Instructor</th>
+            <th scope="col">Room</th><th scope="col">Enrolled / capacity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Thu 1 Oct</td><td>18:00</td><td><a href="class-details.html">HIIT Cardio</a></td><td>High</td><td>Sarah Jenkins</td><td>Studio A</td><td>2 / 30</td></tr>
+          <tr><td>Fri 2 Oct</td><td>09:00</td><td>Vinyasa Yoga</td><td>Low</td><td>Mike Ross</td><td>Studio B</td><td>1 / 20</td></tr>
+          <tr><td>Fri 2 Oct</td><td>17:30</td><td>Power Lifting</td><td>Extreme</td><td>Dave Bautista</td><td>Weights</td><td>1 / 15</td></tr>
+          <tr><td>Sat 3 Oct</td><td>09:00</td><td>Vinyasa Yoga</td><td>Low</td><td>Mike Ross</td><td>Studio B</td><td>1 / 20</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Choose HIIT Cardio to view the sample class details and roster.</p>
+  </main>
+
+  <footer class="border-top py-4 text-center">
+    <p class="mb-0">FitSync &middot; Apex Fitness Center</p>
+  </footer>
+  <!-- Bootstrap JavaScript makes the mobile navigation button work. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
