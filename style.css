@@ -1,0 +1,24 @@
+/* Bootstrap does most of the styling. These are our own small changes. */
+body {
+  background-color: #f4f6f8;
+  color: #182632;
+}
+
+.hero {
+  background-color: #153c34;
+  color: white;
+}
+
+/* Keep keyboard navigation visible. */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #c87400;
+  outline-offset: 3px;
+}
+
+a {
+  color: #0a58ca;
+}
+
+a:hover {
+  color: #084298;
+}
